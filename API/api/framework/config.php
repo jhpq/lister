@@ -50,7 +50,7 @@ class RConfig{
     
 
     // SQL Server 2008 RC2 - PRODUCTION
-    public $driver    = 'MySql';    public $host       = 'localhost'; public $user       = 'root';    public $password   = 'proyecto';    public $db         = 'lister';
+    public $driver    = 'MySql';    public $host       = 'localhost'; public $user       = 'root';    public $password   = 'fragmentacion';    public $db         = 'lister';
 
 
 } 
