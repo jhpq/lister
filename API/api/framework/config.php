@@ -22,10 +22,10 @@ class RConfig{
     public $default_api_results             = array('success'=>false,'data'=>null,'report'=>null);
 
     //
-    public $no_of_directories   = 2; // 2 dirs = "/llantas/api"
+    public $no_of_directories   = 1; // 2 dirs = "/llantas/api"
     // Set api URL for internal calls
 
-    public $api_url             = 'http://localhost/API/api/v2';
+    public $api_url             = 'http://localhost/API/lister/api/v2';
     //public $api_url           = 'http://localhost/API/compras/api/v2';
 
 
