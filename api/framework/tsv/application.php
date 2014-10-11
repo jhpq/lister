@@ -1,6 +1,6 @@
 <?php
 /* */
-session_name('compras');
+session_name('tsvllantas');
 session_start();
 /* */
 require_once(PATH_FRAMEWORK.'/factory.php');

@@ -18,13 +18,6 @@ class SqlsrvDatabase implements AdapterInterface{
 
 
 
-
-
-
-
-
-
-
     /*
      *
      *
@@ -147,10 +140,6 @@ class SqlsrvDatabase implements AdapterInterface{
         }
 
     }
-
-
-
-
 
 
 

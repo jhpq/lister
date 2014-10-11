@@ -29,6 +29,9 @@ abstract class Model{
 
 
 
+
+
+
     /*
      *
      * Get/Set
@@ -79,6 +82,43 @@ abstract class Model{
     }
 
 
+
+
+
+
+    //
+    public function authenticate($allowed_ids, $in_session, $err_code){
+
+        // Validate arguments
+        if ( is_array($allowed_ids) && count($allowed_ids) > 0 && is_string($in_session) && is_numeric($err_code) ){
+
+            //init flag value to exit
+            $flag_valid_user = false;
+
+            // if there is no value exit
+            if (isset($_SESSION['logged']) && isset($_SESSION[$in_session])){
+
+                //
+                foreach($allowed_ids as $v){
+
+                    // if any of the roles matches current level session
+                    if ($v===$_SESSION[$in_session]){
+                        // User allowed Ok
+                        $flag_valid_user = true;
+                        // Break loop and continue
+                        break;
+                    }
+                }
+            }
+            // do we have a valid user?
+            if (!$flag_valid_user){
+                http_response_code($err_code) and exit;
+            }
+            // def return true
+            return true;
+        }
+        http_response_code($err_code) and exit;
+    }
 
 
 

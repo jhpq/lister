@@ -376,30 +376,6 @@ class RockEngineComponentRouterV2 {
                                             $this->results = call_user_func_array(array($klass, $handler_method), $this->matched_element['func_args']);
                                         }
 
-
-                                        // Requires Auth?
-                                        if (count($klass->allowed_ids) > 0 && $klass->in_session && $klass->err_code){
-                                            //init flag value to exit
-                                            $flag_exit = true;
-                                            // if there is no value exit
-                                            if (isset($_SESSION['logged']) && isset($_SESSION[$klass->in_session])){
-                                                foreach($klass->allowed_ids as $id){
-                                                    // if any of the roles matches current level session
-                                                    if ($id===$_SESSION[$klass->in_session]){
-                                                        // User allowed Ok
-                                                        $flag_exit = false;
-                                                        // Break loop and continue
-                                                        break;
-                                                    }
-                                                }
-                                            }
-                                            // flag results
-                                            if ($flag_exit){
-                                                http_response_code($klass->err_code);
-                                                exit;
-                                            }
-                                        }
-
                                         // Set XML root element & Content Type. set output type and root element if xml. All after calling class
                                         $this->root_element     = $klass->getRootElement();
                                         $this->output_type      = $klass->getType();
