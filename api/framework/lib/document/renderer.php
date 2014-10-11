@@ -56,7 +56,7 @@ class Renderer{
                     if ( (int)method_exists($doc_klass, 'setHeaders') && (int)method_exists($doc_klass, 'getParsedResults') ){
 
                         // allow origins and set headers
-                        header("Access-Control-Allow-Origin: *";
+                        header("Access-Control-Allow-Origin: *");
                         $doc_klass->setHeaders();
 
                         //
