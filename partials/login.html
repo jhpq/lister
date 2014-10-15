@@ -1,0 +1,90 @@
+<div id="mainContainer" class="clearfix">
+
+	
+
+
+
+		<div class="container" >
+
+			<div class="row">
+
+				<div class="span12" style="float:right;background-color:black	;" >
+					<label style="color:white; size:20px">{{error_message}}</label>
+					<div class="content">
+					    <!-- BEGIN LOGIN FORM -->
+					    <form id="login-form">
+					        <h3 class="form-title">Login to your account</h3>
+					        
+					        <div class="form-group">
+					            <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+					            <label class="control-label visible-ie8 visible-ie9">Username</label>
+					            <div class="input-icon">
+					                <i class="fa fa-user"></i>
+					                <input class="form-control placeholder-no-fix" type="text" ng-model='username' autocomplete="off" placeholder="Username" name="username" />
+					            </div>
+					        </div>
+					        <div class="form-group">
+					            <label class="control-label visible-ie8 visible-ie9">Password</label>
+					            <div class="input-icon">
+					                <i class="fa fa-lock"></i>
+					                <input class="form-control placeholder-no-fix" type="password" ng-model = 'password' autocomplete="off" placeholder="Password" name="password"/>
+					            </div>
+					        </div>
+					        <div class="form-actions">
+					          
+					            <button type="submit" ng-click = 'login()'class="btn green pull-right">
+					            Login <i class="m-icon-swapright m-icon-white"></i>
+					            </button>
+					        </div>
+					    </form>
+					</div>
+				</div><!--end span12-->
+
+			</div><!--end row-->
+
+		</div><!--end conatiner-->
+
+
+		
+
+	</div><!--end mainContainer-->
+
+
+	<!-- Sidebar Widget
+	================================================== -->
+	<div class="switcher">
+		<h3>Site Switcher</h3>
+		<a class="Widget-toggle-link">+</a>
+
+		<div class="switcher-content clearfix">
+			<div class="layout-switch">
+				<h4>Layout Style</h4>
+				<div class="btn-group">
+					<a id="wide-style" class="btn">Wide</a>
+	  				<a id="boxed-style" class="btn">Boxed</a>
+				</div>
+			</div><!--end layout-switch-->
+
+			<div class="color-switch clearfix">
+				<h4>Color Style</h4>
+				<a id="orange-color" class="color-switch-link">orange</a>
+				<a id="blue-color" class="color-switch-link">blue</a>
+				<a id="green-color" class="color-switch-link">green</a>
+				<a id="brown-color" class="color-switch-link">brown</a>
+				<a id="red-color" class="color-switch-link">red</a>
+			</div><!--end color-switch-->
+
+			<div class="pattern-switch">
+				<h4>BG Pattern</h4>
+				<a style="background:url(img/backgrounds/retina_wood.png);">retina_wood</a>
+				<a style="background:url(img/backgrounds/bgnoise_lg.png);">bgnoise_lg</a>
+				<a style="background:url(img/backgrounds/purty_wood.png);">purty_wood</a>
+				<a style="background:url(img/backgrounds/irongrip.png);">irongrip</a>
+				<a style="background:url(img/backgrounds/low_contrast_linen.png);">low_contrast_linen</a>
+				<a style="background:url(img/backgrounds/tex2res5.png);">tex2res5</a>
+				<a style="background:url(img/backgrounds/wood_pattern.png);">wood_pattern</a>
+			</div><!--end pattern-switch-->
+
+		</div><!--end switcher-content-->
+	</div>
+	<!-- End Sidebar Widget-->

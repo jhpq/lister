@@ -44,39 +44,61 @@ $app = new \Slim\Slim();
  * 4.- We add a new user '/newuser'
  */
 
-$app -> get('/livesession/:id',  'getSession');
-$app -> post('/login',           'postLogin');
-$app -> put('/closesession',     'putCloseSession');
-$app -> post('/newuser',         'postNewUser');
 
 //
-function getSession($id){
-    try {
-        $db  = getConnection();
-        $sql = "SELECT Connected FROM Users WHERE User  = $id";
-    
-        $stmt = query($sql);
-
-    } catch (Exception $e) {
-        return $e;     
-    } 
-
-}
-
-//
-function postLogin(){
-
-}
+$app->post('/login', function() use ($app){      
+    //echo 'cool';
+    $params = json_decode($app->request->getBody());
+    $loginDB = new loginDB();
+    $data = $loginDB->getLogin($params);
+    unset($loginDB);
+    $response = $app->response();
+    $response->header('Access-Control-Allow-Origin', '*');
+    $response->header('Access-Control-Allow-Credentials', true);      
+    $response->write($data);
+});
 
 //
-function putCloseSession(){
-
-}
+$app->post('/livesession/:id', function() use ($app){      
+    //echo 'cool';
+    $params = json_decode($app->request->getBody());
+    $loginDB = new loginDB();
+    $data = $loginDB->getLogin($params);
+    unset($loginDB);
+    $response = $app->response();
+    $response->header('Access-Control-Allow-Origin', '*');
+    $response->header('Access-Control-Allow-Credentials', true);      
+    $response->write($data);
+});
 
 //
-function postNewUser(){
+$app->post('/closesession', function() use ($app){      
+    //echo 'cool';
+    $params = json_decode($app->request->getBody());
+    $loginDB = new loginDB();
+    $data = $loginDB->getLogin($params);
+    unset($loginDB);
+    $response = $app->response();
+    $response->header('Access-Control-Allow-Origin', '*');
+    $response->header('Access-Control-Allow-Credentials', true);      
+    $response->write($data);
+});
 
-}
+//
+$app->post('/newuser', function() use ($app){      
+    //echo 'cool';
+    $params = json_decode($app->request->getBody());
+    $loginDB = new loginDB();
+    $data = $loginDB->getLogin($params);
+    unset($loginDB);
+    $response = $app->response();
+    $response->header('Access-Control-Allow-Origin', '*');
+    $response->header('Access-Control-Allow-Credentials', true);      
+    $response->write($data);
+});
+
+
+
 
 
 /**
