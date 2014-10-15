@@ -1,0 +1,134 @@
+
+
+	<div id="mainContainer" class="clearfix">
+
+
+
+
+
+		<div class="container">
+
+			<div class="row">
+				
+			
+				<div class="aside-inner" id="product-aside">
+					
+
+
+					
+				
+
+				<div class="span12" style="background-color:black; padding:10px; ">
+					<div class="row">
+
+						<div class="product-details clearfix">
+						
+							<div class="span5">
+								<ul class="nav">
+						  <li class="active">
+						  	<a>Search User</a>
+						  </li>
+						</ul>
+								<br>
+								<div class ="span3 breadcrumb" style="height:25%">
+									<input type="text" ng-model="search_users" ng-filter>
+									<div>
+										<span></span>
+									</div>
+									<div ng-repeat="user in users">
+										<label>{{user.name}}</label>
+									</div>
+									
+								</div><!--end product-img-->
+								
+							</div><!--end span5-->
+							<div class="span6"></div>
+							<br>
+							<br>
+							<br>
+							<br>
+							<div class="span6 offset1">
+						<ul class="nav">
+						  <li class="active">
+						  	<a>Pending List</a>
+						  </li>
+						</ul>
+						<div class="table-responsive">
+						<table class=" table  table-responsive" style="width:100%">
+			                <thead>
+			                	<tr>
+				                    <th>Message</th>
+									<th>From User</th>
+									
+									    
+										
+								</tr>	
+			                </thead>
+			                <tbody ng-repeat="row in topconsignees" >
+			                   <tr > 
+				                    <td>{{row.consigneedescripcion}}</td>
+				                    <td>{{row.consigneeciudad}}</td>
+				                    <td>{{row.requests}}</td>
+			                   </tr>
+			                </tbody>
+			            </table>
+			        </div>   
+
+				</div><!--end aside-inner-->
+							
+
+					
+					</div><!--end row-->
+
+
+					
+					</div><!--end product-tab-->
+
+				</div><!--end span9-->
+
+			</div><!--end row-->
+
+		</div><!--end conatiner-->
+
+
+	</div><!--end mainContainer-->
+
+
+	<!-- Sidebar Widget
+	================================================== -->
+	<div class="switcher">
+		<h3>Site Switcher</h3>
+		<a class="Widget-toggle-link">+</a>
+
+		<div class="switcher-content clearfix">
+			<div class="layout-switch">
+				<h4>Layout Style</h4>
+				<div class="btn-group">
+					<a id="wide-style" class="btn">Wide</a>
+	  				<a id="boxed-style" class="btn">Boxed</a>
+				</div>
+			</div><!--end layout-switch-->
+
+			<div class="color-switch clearfix">
+				<h4>Color Style</h4>
+				<a id="orange-color" class="color-switch-link">orange</a>
+				<a id="blue-color" class="color-switch-link">blue</a>
+				<a id="green-color" class="color-switch-link">green</a>
+				<a id="brown-color" class="color-switch-link">brown</a>
+				<a id="red-color" class="color-switch-link">red</a>
+			</div><!--end color-switch-->
+
+			<div class="pattern-switch">
+				<h4>BG Pattern</h4>
+				<a style="background:url(img/backgrounds/retina_wood.png);">retina_wood</a>
+				<a style="background:url(img/backgrounds/bgnoise_lg.png);">bgnoise_lg</a>
+				<a style="background:url(img/backgrounds/purty_wood.png);">purty_wood</a>
+				<a style="background:url(img/backgrounds/irongrip.png);">irongrip</a>
+				<a style="background:url(img/backgrounds/low_contrast_linen.png);">low_contrast_linen</a>
+				<a style="background:url(img/backgrounds/tex2res5.png);">tex2res5</a>
+				<a style="background:url(img/backgrounds/wood_pattern.png);">wood_pattern</a>
+			</div><!--end pattern-switch-->
+
+		</div><!--end switcher-content-->
+	</div>
+	<!-- End Sidebar Widget-->

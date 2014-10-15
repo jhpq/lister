@@ -1,0 +1,13 @@
+
+
+{"Users": [
+    {"username": "Jose", "password":"123", "id":1}, 
+    {"username": "Natasha", "password":"74128", "id":2}, 
+    {"username": "Andrea", "password":"7272", "id":3}
+    ],
+
+"Messages":[
+    {"iduser": 1, "content": "Hola Jose", "iduser":2},
+    {"iduser": 2, "content": "Hola Andrea", "iduser":1},
+    {"iduser": 3, "content": "Test Worth", "iduser":1}
+]}

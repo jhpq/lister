@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+  <!-- jquery ui css -->
+  <link rel="stylesheet" href="css/jquery-ui-1.10.1.min.css">
+  <link rel="stylesheet" href="css/customize.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- flexslider css-->
+  <link rel="stylesheet" href="css/flexslider.css">
+  <!-- fancybox -->
+  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+    <link rel="stylesheet" href="css/font-awesome-ie7.css">
+  <![endif]-->
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+<body>
+  <div id="mainContainer" class="clearfix">
+
+    <!--begain header-->
+    <header>
+      <div class="upperHeader">
+        <div class="container">
+          <ul class="pull-right inline">
+            <li><a class="invarseColor" href="#">Mi Cuenta</a></li>
+          </ul>
+        </div><!--end container-->
+      </div><!--end upperHeader-->
+
+      <div class="middleHeader">
+        <div class="container">
+
+          <div class="middleContainer " style="text-align:center">
+
+            <h1 style="color:white">LISTER</h1>
+          
+      </div><!--end middleHeader-->
+
+      <div class="Nav">
+        <div class="container">
+          <div >
+                  
+                <ul class="nav">
+                  <li class="active"><a href="#"><i class="icon-home"></i></a></li>
+                  <li>
+                    <a href="#/productos">MyLister</a>
+                    <div>
+                      
+                    </div>
+                  </li>
+                  <li><a href="#/promos"></a></li>
+                  <li><a href="#/instructions">Instructions</a></li>
+                </ul><!--end nav-->
+
+          </div>
+        </div><!--end container-->
+      </div><!--end mainNav-->
+      
+    </header>
+    <!-- end header -->
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ui-view></div>
+
+  
+  <footer>
+    <div class="footerOuter">
+      <div class="container">
+        <div class="row-fluid">
+
+          <div class="span6">
+            <div class="titleHeader clearfix">
+              <h3>Usefull Links</h3>
+            </div>
+
+            
+            <div class="usefullLinks">
+              <div class="row-fluid">
+                <div class="span6">
+                  <ul class="unstyled">
+                    <li><a class="invarseColor" href="#"><i class="icon-caret-right"></i> Acerca de nosotros</a></li>
+                    <li><a class="invarseColor" href="#"><i class="icon-caret-right"></i> Informacion de Entrega</a></li>
+                  </ul>
+                </div>
+
+                
+              </div>
+            </div>
+
+          </div><!--end span6-->
+
+          <div class="span3">
+            <div class="titleHeader clearfix">
+              <h3>Informacion de Contacto</h3>
+            </div>
+
+            <div class="contactInfo">
+              <ul class="unstyled">
+                <li>
+                  <button class="btn btn-small">
+                    <i class="icon-volume-up"></i>
+                  </button>
+                  Call Us: <a class="invarseColor" href="#">656-652-69586</a>
+                </li>
+                <li>
+                  <button class="btn btn-small">
+                    <i class="icon-envelope-alt"></i>
+                  </button>
+                  <a class="invarseColor" href="#">jpereyra@html.com</a>
+                </li>
+                <li>
+                  <button class="btn btn-small">
+                    <i class="icon-map-marker"></i>
+                  </button>
+                  
+                </li>
+              </ul>
+            </div>
+
+          </div><!--end span3-->
+
+          
+
+        </div><!--end row-fluid-->
+
+      </div><!--end container-->
+    </div><!--end footerOuter-->
+
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <ul class="payments inline pull-right">
+            <li class="visia"></li>
+            <li class="paypal"></li>
+            <li class="electron"></li>
+            <li class="discover"></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+    </footer>
+    <!--end footer-->
+
+  </div><!--end mainContainer-->
+
+
+  <!-- Sidebar Widget
+  ================================================== -->
+  <div class="switcher">
+    <h3>Site Switcher</h3>
+    <a class="Widget-toggle-link">+</a>
+
+    <div class="switcher-content clearfix">
+      <div class="layout-switch">
+        <h4>Layout Style</h4>
+        <div class="btn-group">
+          <a id="wide-style" class="btn">Wide</a>
+            <a id="boxed-style" class="btn">Boxed</a>
+        </div>
+      </div><!--end layout-switch-->
+
+      <div class="color-switch clearfix">
+        <h4>Color Style</h4>
+        <a id="orange-color" class="color-switch-link">orange</a>
+        <a id="blue-color" class="color-switch-link">blue</a>
+        <a id="green-color" class="color-switch-link">green</a>
+        <a id="brown-color" class="color-switch-link">brown</a>
+        <a id="red-color" class="color-switch-link">red</a>
+      </div><!--end color-switch-->
+
+      <div class="pattern-switch">
+        <h4>BG Pattern</h4>
+        <a style="background:url(img/backgrounds/retina_wood.png);">retina_wood</a>
+        <a style="background:url(img/backgrounds/bgnoise_lg.png);">bgnoise_lg</a>
+        <a style="background:url(img/backgrounds/purty_wood.png);">purty_wood</a>
+        <a style="background:url(img/backgrounds/irongrip.png);">irongrip</a>
+        <a style="background:url(img/backgrounds/low_contrast_linen.png);">low_contrast_linen</a>
+        <a style="background:url(img/backgrounds/tex2res5.png);">tex2res5</a>
+        <a style="background:url(img/backgrounds/wood_pattern.png);">wood_pattern</a>
+      </div><!--end pattern-switch-->
+
+    </div><!--end switcher-content-->
+  </div>
+  <!-- End Sidebar Widget-->
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="js/angular/angular.min.js"></script>
+  <script src="js/angular/angular-ui-router.js"></script>
+   <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
+ 
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
